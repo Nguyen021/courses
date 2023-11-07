@@ -1,5 +1,8 @@
-<h2>This is blade template</h2>
+@extends('layouts.app')
 
+@section('title','This is blade template')
+
+@section('content')
 <div>
     @if(count($tasks))
         @foreach($tasks as $task)
@@ -19,3 +22,4 @@
         <div>Empty</div>
     @endforelse
 </div>
+@endsection
