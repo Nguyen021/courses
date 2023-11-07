@@ -14,7 +14,7 @@
         <div>There are no task</div>
     @endif
 </div>
-
+ 
 <div>
     @forelse($tasks as $task)
         <div>{{ $task->title}}</div>
